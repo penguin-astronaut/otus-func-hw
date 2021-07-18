@@ -1,7 +1,7 @@
 export function curry<T>(
   func: (...args: T[]) => any
 ): (...args: T[]) => (...args2: T[]) => any {
-  let {length} = func;
+  let { length } = func;
   let argValues: T[] = [];
   return function rec(...args: T[]): () => any {
     length -= args.length;

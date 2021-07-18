@@ -8,7 +8,8 @@ export function semverSort(vers: string[]): string[] {
 
       if (Number.isNaN(numNext) || num > numNext) {
         return 1;
-      } if (num < numNext) {
+      }
+      if (num < numNext) {
         return -1;
       }
     }
